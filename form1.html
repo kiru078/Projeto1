@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <form>
+    <fieldset style="width: 10cm;">
+        <div>
+            <label for="">Informe a data do dia</label><br>
+            <input type="date" id="data" name="data">
+        </div>
+        <div>
+            <h2>Dados de Acesso</h2>
+            <label for="">Usuário</label><br>
+            <input type="text" id="user" name="user" placeholder="Usuário"><br>
+            <label for="">Senha</label><br>
+            <input type="password" name="password" id="password" placeholder="Senha"><br>
+        </div>
+        <div>
+                <label for="">Nome</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Nome"><br>
+                <label for="">Endereço</label><br>
+                <input type="text" name="Endereço" id="Endereço" placeholder="Endereço"><br>
+                <label for="">Numero</label><br>
+                <input type="text" name="numero" id="numero" placeholder="Numero"><br>
+                <label for="">Complemento</label><br>
+                <input type="text" name="complemento" id="complemento" placeholder="Complemento"><br>
+                <label for=""> Sua cidade</label><br>
+                <input list="cidades" name="cidade" id="cidade" placeholder="Cidade">
+                <datalist id="cidades">
+                    <option value="Sao Paulo"></option>
+                    <option value="Sorocaba"></option>
+                    <option value="Piracicaba"></option>
+                    <option value="Salto de Pirapora"></option>
+                    
+                </datalist><br>
+                <label for="">Seu estado</label><br>
+                <select name="estado" id="estado">
+                <option selected disabled value="">Selecione</option>
+                <option value="">Sao Paulo</option>
+                <option value="">Rio de Janeiro</option>
+                <option value="">Amazonas</option>
+                <option value="">Acre</option>
+            </select><br>
+            <label for="">CEP:</label><br>
+            <input type="text" name="cep" id="cep" placeholder="000000-00">
+            
+
+        </div>
+        <div>
+            <label for=""><b>Gênero</b></label><br>
+            <label for=""></label><br>
+            <input type="radio" name="genero" id="Masculino">Masculino <br>
+            <label for=""></label><br>
+            <input type="radio" name="genero" id="Feminino">Feminino <br>
+            <label for=""></label><br>
+            <input type="radio" name="genero" id="outro">Outro <br><br>
+        </div>
+        <label for=""> <b>Selecione seu curso </b></label><br><br>
+        <input type="checkbox" name="ec" id="ec">Engenharia da Computação <br>
+        <label for=""></label><br>
+        <input type="checkbox" name="ads" id="ads">ADS <br>
+        <label for=""></label><br>
+        <input type="checkbox" name="ps" id="ps">Psicologia <br>
+        <label for=""></label><br>
+        <input type="checkbox" name="gs" id="gs">Gastronomia <br><br>
+        <div>
+            <label for=""><b>Modelo</b></label><br><br>
+            <input type="radio" name="modelos" id="presencial">Presencial <br>
+            <label for=""></label><br>
+            <input type="radio" name="modelos" id="EAD">EAD <br>
+            <label for=""></label><br>
+            <input type="radio" name="modelos" id="semi">Semi Presencial <br>
+
+        </div>
+    </fieldset>
+</form>
+</body>
+</html>
